@@ -1,0 +1,38 @@
+/* Kirton 3 Page Styling */
+.kirton-intro {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 30px;
+    box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    margin: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.kirton-intro h2 {
+    text-shadow: 4px 4px 15px rgba(0, 255, 127, 1);
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.image-gallery img {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.9);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Crack the Bet Animation */
+@keyframes crackEffect {
+    0% { transform: scale(1); text-shadow: 0px 0px 5px rgba(255, 0, 0, 1); }
+    100% { transform: scale(1.2); text-shadow: 0px 0px 20px rgba(255, 255, 0, 1); }
+}
